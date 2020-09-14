@@ -43,7 +43,7 @@ def main():
     print('fold,acc,f1')
     for i in range(knn_train.k_folds.folds_num):
         prediction = knn_train.execute()
-        print(f'{i},{prediction[0]},{prediction[1]}')
+        print(f'{i+1},{prediction[0]},{prediction[1]}')
 
 
 if __name__ == '__main__':
